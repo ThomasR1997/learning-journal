@@ -11,7 +11,7 @@ export const Navbar = () => {
       <StyledNav>
         <FlexBox>
           <img src={logo} alt="logo" />
-          <StyledLink alt to="/landing-page">
+          <StyledLink alt="true" to="/landing-page">
             My learning journal
           </StyledLink>
         </FlexBox>
