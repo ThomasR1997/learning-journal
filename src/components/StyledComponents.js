@@ -3,6 +3,7 @@ import styled from "styled-components";
 import hero from "../images/blog-image-hero.png";
 
 ////////////////////////////////////// Navbar //////////////////////////////////////
+
 // Styling for nav div
 export const StyledNav = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ export const StyledNav = styled.div`
 // Styling for NavLink
 export const StyledLink = styled(NavLink)`
   color: black;
-  text-decoration: none;
+  text-decoration: ${(props) => (props.underline ? "underline" : "none")};
 
   margin: ${(props) => (props.alt ? "0.2em" : "1em")};
   font-weight: ${(props) => (props.alt ? "700" : "600")};
@@ -45,8 +46,13 @@ export const FlexBox = styled.div`
   justify-content: center;
 `;
 
+/////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////// LandingPage //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////// Hero section ////////////////////////////////////
+
+// Background image div
 export const HeroDiv = styled.div`
   background-image: url(${hero});
   background-position: center;
@@ -66,6 +72,7 @@ export const HeroDiv = styled.div`
   }
 `;
 
+// Title for hero section
 export const HeroTitle = styled.h1`
   color: white;
   font-size: 40px;
@@ -77,6 +84,7 @@ export const HeroTitle = styled.h1`
   }
 `;
 
+// Paragraph div
 export const HeroPDiv = styled.div`
   width: 46%;
   text-align: start;
@@ -95,6 +103,7 @@ export const HeroPDiv = styled.div`
   }
 `;
 
+// Hero paragraph styling
 export const HeroP = styled.p`
   color: white;
   font-size: 16px;
@@ -104,6 +113,70 @@ export const HeroP = styled.p`
   }
 `;
 
-////////////////////////////////////// HomePage //////////////////////////////////////
+//////////////////////////////////// Blog section ////////////////////////////////////
 
+// Styling for blog section
+export const BlogSection = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
+
+  width: fit-content;
+  margin: 3em auto;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: auto;
+  }
+`;
+
+// Styling for individual blog
+export const BlogPost = styled.div`
+  width: 19.3em;
+  text-align: start;
+`;
+
+export const BlogDate = styled.p`
+  font-size: 14px;
+`;
+
+export const BlogTitle = styled.h1`
+  font-size: 24px;
+`;
+
+export const BlogText = styled.p`
+  font-size: 16px;
+  color: #505050;
+`;
+
+//////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// HomePage //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////// AboutPage //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////// Footer //////////////////////////////////////
+
+export const StyledFooter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #202020;
+  padding: 3em;
+  margin-top: 3em;
+`;
+
+export const FooterText = styled.p`
+  color: white;
+  font-size: 12px;
+  margin: 0.2em;
+
+  font-weight: ${(props) => (props.alt ? "bold" : "normal")};
+`;

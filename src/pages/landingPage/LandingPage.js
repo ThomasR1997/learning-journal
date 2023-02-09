@@ -1,9 +1,17 @@
 import {
+  BlogDate,
+  BlogPost,
+  BlogSection,
+  BlogText,
+  BlogTitle,
   HeroDiv,
   HeroP,
   HeroPDiv,
   HeroTitle,
+  StyledLink,
 } from "../../components/StyledComponents";
+
+import { posts } from "../../data";
 
 export const LandingPage = () => {
   return (
@@ -19,6 +27,25 @@ export const LandingPage = () => {
           </HeroP>
         </HeroPDiv>
       </HeroDiv>
+
+      <BlogSection>
+        {posts.map((item, index) => {
+          return (
+            <BlogPost key={index}>
+              <div>
+                <img src={item.image} alt="blog" />
+              </div>
+              <BlogDate>{item.date}</BlogDate>
+              <BlogTitle>{item.name}</BlogTitle>
+              <BlogText>{item.text}</BlogText>
+            </BlogPost>
+          );
+        })}
+      </BlogSection>
+
+      <StyledLink underline="true" to="/home-page">
+        View More
+      </StyledLink>
     </>
   );
 };
