@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/learning-journal/static/css/main.073c9b0a.css",
+    "main.js": "/learning-journal/static/js/main.30720f44.js",
+    "static/js/787.f27c92ba.chunk.js": "/learning-journal/static/js/787.f27c92ba.chunk.js",
+    "static/media/blog-image-hero.png": "/learning-journal/static/media/blog-image-hero.9adb1e614e9a0b8749c9.png",
+    "static/media/article-image.png": "/learning-journal/static/media/article-image.6b030d16e9569802f273.png",
+    "static/media/blog-image-05.png": "/learning-journal/static/media/blog-image-05.66070efd7a0bdfd80d99.png",
+    "static/media/blog-image-06.png": "/learning-journal/static/media/blog-image-06.6bce8dea1a6d2f89a9a4.png",
+    "static/media/blog-image-02.png": "/learning-journal/static/media/blog-image-02.9fdb84fe9b4a39290f54.png",
+    "static/media/blog-image-01.png": "/learning-journal/static/media/blog-image-01.55387cddf4ec56c863fb.png",
+    "static/media/blog-image-03.png": "/learning-journal/static/media/blog-image-03.715e81131aaed80a25ab.png",
+    "static/media/blog-image-04.png": "/learning-journal/static/media/blog-image-04.cb21175267820f02ecb1.png",
+    "static/media/image 18.png": "/learning-journal/static/media/image 18.077ee803a3a58bc61246.png",
+    "index.html": "/learning-journal/index.html",
+    "main.073c9b0a.css.map": "/learning-journal/static/css/main.073c9b0a.css.map",
+    "main.30720f44.js.map": "/learning-journal/static/js/main.30720f44.js.map",
+    "787.f27c92ba.chunk.js.map": "/learning-journal/static/js/787.f27c92ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.30720f44.js"
+  ]
+}
