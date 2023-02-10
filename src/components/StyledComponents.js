@@ -183,6 +183,40 @@ export const StyledImage = styled.img`
 ////////////////////////////////////// AboutPage //////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
 
+// Margin div for about page
+export const AboutDiv = styled.div`
+  margin: 5em;
+  text-align: start;
+`;
+
+// Div for text/image placement
+export const StyledAbout = styled.div`
+  display: flex;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+`;
+
+// Portrait image styling
+export const StyledPortrait = styled.img`
+  margin-right: 2em;
+  width: 30%;
+  height: auto;
+
+  @media only screen and (max-width: 900px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    width: 70%;
+  }
+`;
+
 ////////////////////////////////////// RecentPosts //////////////////////////////////////
 export const PostHeader = styled.h2`
   margin-top: 3em;
